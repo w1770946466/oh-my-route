@@ -35,6 +35,9 @@ jobs:
               
             - name: Run Script
               run: node jx_sign.js
+            
+            - name: Run Script
+              run: node jd_sign.js
 
             - name: Run Script
               run: node JD_ddworld.js
