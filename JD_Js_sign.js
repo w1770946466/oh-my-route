@@ -44,7 +44,7 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 
 //Node.js用户请在jdCookie.js处填写京东ck;
 
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+const jdCookieNode = process.env.JD_COOKIE
 
 let cookiesArr = [], cookie = '', message;
 
